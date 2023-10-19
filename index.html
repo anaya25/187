@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Marker based AR Portfolio</title>
+
+  <!-- Import A-Frame and then AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <!-- A-frame scene -->
+<a-scene vr-mode-ui="enabled:false;" embedded arjs="sourcetype:webcam; sourcewidth: 1280;
+ sourceheight: 960; display-width: 1200; display-height: 960; debugUIEnabled : false;">
+  <assets>
+   
+
+    <image id="card2" src="./VR-AR-ProjectCards/2.png"></image>
+
+    <image id="card3" src="./VR-AR-ProjectCards/3.png"></image>
+
+    <image id="card4" src="./VR-AR-ProjectCards/4.png"></image>
+
+    <image id="card5" src="./VR-AR-ProjectCards/5.png"></image>
+
+    <image id="card6" src="./VR-AR-ProjectCards/6.png"></image>
+
+  </assets>
+
+  <a-marker type="pattern" url="pattern Marker/virtual flight/pattern-icon-01.patt">
+    <a-plane src="#card2" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0" ></a-plane>
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern Marker/virtual flight/pattern-icon-04.patt">
+    <a-plane src="#card3" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0" ></a-plane>
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern Marker/virtual flight/pattern-icon-06.patt">
+    <a-plane src="#card4" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0" ></a-plane>
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern Marker/virtual flight/pattern-icon-03.patt">
+    <a-plane src="#card5" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0" ></a-plane>
+  </a-marker>
+
+  <a-marker type="pattern" url="pattern Marker/virtual flight/pattern-icon-02.patt">
+    <a-plane src="#card6" position="0 0 -1" width="2" height="1.5" rotation="-90 0 0" ></a-plane>
+  </a-marker>
+
+  
+
+  
+</a-scene>
+
+ 
+</body>
+
+</html>
